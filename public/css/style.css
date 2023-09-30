@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #wrapper {
+  height: 100%;
+}
+
+ol, ul, li {
+  list-style: none;
+}
+
+/* Boostrap customised css */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+body {
+
+  height: 100%;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  color: rgb(73, 73, 73);
+}
+
+/* Button pill*/
+button {
+  font-weight: 200;
+  background-color: rgb(27, 177, 164);
+  border: none;
+  color: black;
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 20px;
+  width: 8rem;
+  height: 2rem;
+  text-shadow: none;
+}
+
+button:hover {
+  background-color: #1d1d1d;
+  color: #fff;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  border: .05rem solid #fff;
+}
+
+button:focus {
+  outline: none; /*to avoid border effect when you click the button*/
+}
+
+/* 1st div*/
+.cover-container {
+  max-width: 42em;
+}
+
+/* Footer */
+.footer {
+  color: rgb(163, 163, 163);
+  font-weight: 200;
+}
+
+#pie {
+  margin: 2rem auto 0 auto;
+  display: flex;
+  justify-content: center;
+  max-width: 600px;
+}
+
+svg {
+  margin-top: 50px;
+  left: 130px;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Responsive UI for mobile */
+@media only screen and (max-width: 600px) {
+
+  * {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    max-height: 820px;
+    width: 10vh;
+    white-space: wrap;
+  }
+
+  svg {
+    width: 100;
+    height: fit-content;
+    margin-top: 50px;
+    left: -5px;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  body {
+    overflow: hidden;
+    height: 100vh;
+    width: 10vh;
+    white-space: wrap;
+  }
+
+  svg {
+    width: 100;
+    height: fit-content;
+  }
+}
